@@ -18,5 +18,12 @@ describe('Sleep', function() {
   it('should be a function', function() {
     expect(SleepEntry).to.be.a('function');
   });
-  
+
+  it("should be an instance of SleepEntry", function() {
+      expect(user1).to.be.an.instanceof(SleepEntry);
+      expect(user2).to.be.an.instanceof(SleepEntry);
+      expect(user3).to.be.an.instanceof(SleepEntry);
+  });
+
+
 });
