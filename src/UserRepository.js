@@ -124,6 +124,16 @@ hoursSlept, divide by this.sleepdata.length, and return */
     // return avgSleepQuality.toFixed(1);
   }
 
+  retrieveBestWeeklySleepers(dataset) {
+  /* FOR A USER, filter through the sleepData array
+  for any elements with sleepQuality value  > 3,
+  store element's 'name' value in new array,
+  and return array */
+  console.log("hello hi");
+  const bestSleepers = this.sleepData.filter(entry => entry.sleepQuality > 3);
+  //console.log(bestSleepers);
+  }
+
   calculateAvgWeeklySleepQuality(startDate) {
     /* for each this.sleepLog element between
     startDate and startDate + 7, accumulate sleepQuality,
