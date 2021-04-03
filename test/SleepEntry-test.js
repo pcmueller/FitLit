@@ -37,5 +37,11 @@ describe('Sleep', function() {
       expect(user3.date).to.equal("2019/06/17");
   });
 
+  it("should store a User\'s hours slept", function() {
+      expect(user1.hoursSlept).to.equal(6.1);
+      expect(user2.hoursSlept).to.equal(7.5);
+      expect(user3.hoursSlept).to.equal(5.3);
+  });
+
 
 });
