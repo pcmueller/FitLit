@@ -114,6 +114,14 @@ hoursSlept, divide by this.sleepdata.length, and return */
   calculateAvgDailySleepQuality() {
     /* for each this.sleepLog element, accumulate
     sleepQuality, divide by this.sleepData.length, and return */
+    // const userLog = this.sleepData.filter(entry => entry.id === id);
+    // const dailySleepQuality = this.userLog.map(entry => entry.sleepQuality);
+    // const totalSleepQuality = dailySleepQuality.reduce((sum, hrs) => {
+    // return sum + hrs;
+    // });
+    // const avgSleepQuality =  totalSleepQuality / userLog.length ;
+    //
+    // return avgSleepQuality.toFixed(1);
   }
 
   calculateAvgWeeklySleepQuality(startDate) {
