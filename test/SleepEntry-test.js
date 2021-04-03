@@ -13,7 +13,10 @@ describe('Sleep', function() {
     user1 = new SleepEntry(sleepData[0]);
     user2 = new SleepEntry(sleepData[4]);
     user3 = new SleepEntry(sleepData[8]);
-    });
+  });
 
-
+  it('should be a function', function() {
+    expect(SleepEntry).to.be.a('function');
+  });
+  
 });
