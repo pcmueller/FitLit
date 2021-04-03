@@ -79,7 +79,30 @@ class UserRepository {
 // sleepData (REFACTOR/MOVE TO `UserRepository.js`)
 
   calculateAvgDailyHrsSlept() {
-    console.log("LOGGGED");
+    //console.log("LOGGGED");
+    /* FOR A USER,for each this.sleepLog element, accumulate
+hoursSlept, divide by this.sleepdata.length, and return */
+//console.log("logged");
+// const userLog = this.sleepData.filter(entry => entry.id === id);
+// console.log(userLog);
+// const dailyHrsSlept = this.userLog.map(entry => entry.hoursSlept);
+// console.log(dailyHrsSlept);
+// const totalHrsSlept = dailyHrsSlept.reduce((sum, hrs) => {
+//return sum + hrs;
+// });
+// const avgHrs =  Math.round(totalHrsSlept / this.userLog.length);
+//
+// return avgHrs;
+//
+// const dailyOunces = this.hydrationData.map(entry => entry.numOunces);
+// const totalOunces = dailyOunces.reduce((sumOz, numOz) => {
+//return sumOz + numOz;
+// });
+// const avgOunces = Math.round(totalOunces / this.hydrationData.length);
+//
+// return avgOunces;
+
+
   }
 
   calculateAvgWeeklyHrsSlept(startDate) {
@@ -166,7 +189,7 @@ class UserRepository {
         sleeper = entry;
       }
     });
-    const bestSleepers = this.sleepData.filter(entry => 
+    const bestSleepers = this.sleepData.filter(entry =>
       entry.hoursSlept === sleeper.hoursSlept);
 
     // let sleeperDate = sleeper.date;
