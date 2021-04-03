@@ -43,5 +43,10 @@ describe('Sleep', function() {
       expect(user3.hoursSlept).to.equal(5.3);
   });
 
+  it("should store a User\'s sleep quality", function() {
+      expect(user1.sleepQuality).to.equal(2.2);
+      expect(user2.sleepQuality).to.equal(3.8);
+      expect(user3.sleepQuality).to.equal(4.9);
+    });
 
 });
