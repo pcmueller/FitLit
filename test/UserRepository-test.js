@@ -103,6 +103,22 @@ describe('UserRepository', function() {
 
   });
 
+  it.only("should calculate the average sleep quality for a users", function() {
+    const avgSleepQuality = userRepo.calculateAvgSleepQuality(1);
+
+    //expect(avgSleepQuality).to.equal(3.4);
+  });
+
+  it("should retrieve all sleepQuality values greater than 3", function () {
+  const bestWeeklySleepers = userRepo.retrieveBestWeeklySleepers();
+
+  expect(bestWeeklySleepers[0]).to.be.at.least(3);
+  expect(bestWeeklySleepers[3]).to.be.at.least(3);
+  expect(bestWeeklySleepers[6]).to.be.at.least(3);
+
+  });
+
+
   it("should be able to retrieve the hours slept by a user on a specific date", function() {
     const hoursSlept1 = userRepo.calculateHrsSleptByDate(1, "2019/06/17");
     const hoursSlept2 = userRepo.calculateHrsSleptByDate(2, "2019/06/19");
