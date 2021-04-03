@@ -25,5 +25,17 @@ describe('Sleep', function() {
       expect(user3).to.be.an.instanceof(SleepEntry);
   });
 
+  it("should store a User's id", function() {
+      expect(user1.id).to.equal(1);
+      expect(user2.id).to.equal(2);
+      expect(user3.id).to.equal(3);
+  });
+
+  it("should store a entry date", function() {
+      expect(user1.date).to.equal("2019/06/15");
+      expect(user2.date).to.equal("2019/06/16");
+      expect(user3.date).to.equal("2019/06/17");
+  });
+
 
 });
